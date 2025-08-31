@@ -2,6 +2,10 @@ import '../src/index.css'; // storybook でのコンポーネントの表示に�
 
 import type { Preview } from "@storybook/react";
 
+import { initialize, mswLoader } from "msw-storybook-addon";
+
+initialize();
+
 const preview: Preview = {
   parameters: {
     // 指定の Props を自動的に Storybook の「Actions」タブにイベント表示する設定。
@@ -13,6 +17,7 @@ const preview: Preview = {
       },
     },
   },
+  loaders: [mswLoader],
 };
 
 export default preview;
