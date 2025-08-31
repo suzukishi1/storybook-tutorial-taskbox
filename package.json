@@ -25,6 +25,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "test-storybook": "test-storybook",
     "init-msw": "msw init public/"
   },
   "devDependencies": {
@@ -37,6 +38,7 @@
     "@storybook/react": "^8.5.6",
     "@storybook/react-vite": "^8.5.6",
     "@storybook/test": "^8.5.6",
+    "@storybook/test-runner": "^0.23.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
