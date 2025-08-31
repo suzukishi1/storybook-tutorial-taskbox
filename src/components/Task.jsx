@@ -23,7 +23,11 @@ export default function Task({
 }) {
   return (
     <div className={`list-item ${state}`}>
-      <label htmlFor="checked" aria-label={`archiveTask-${id}`}>
+      <label
+        htmlFor="checked"
+        aria-label={`archiveTask-${id}`}
+        className="checkbox"
+      >
         <input
           type="checkbox"
           disabled={true}
