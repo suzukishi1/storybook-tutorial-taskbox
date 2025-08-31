@@ -2,8 +2,10 @@ import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   // デフォルトでは src 配下の .mdx, .stories. ファイルが対象
-  // src/stories 配下にはサンプルのストーリーファイルがある
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  // stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  // サンプルのストーリーファイルは実行対象外にするため、チュートリアル対象に限定する
+  stories: ["../src/components/**/*.stories.@(js|jsx|ts|tsx)"],
+
   // 次の通りにすれば、ディレクトリを特定できる
   // stories: ["../src/components/**/*.stories.@(js|jsx|ts|tsx)"],
   staticDirs: ["../public"],
